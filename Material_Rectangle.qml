@@ -44,7 +44,6 @@ Rectangle {
             height: control.radius * 2
             color: control.color
         }
-
         layer.enabled: true
         layer.effect: ElevationEffect {
             elevation: control.elevation

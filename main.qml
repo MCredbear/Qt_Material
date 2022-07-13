@@ -25,6 +25,13 @@ Window {
         height: 50
         color: "#56ff00"
     }
+    Material_Image {
+        x: 50
+        y: 150
+        width: 300
+        height: 250
+        source: "file:/home/redbear/Pictures/illust_66908482_20210127_160011.png"
+    }
 }
 
 /*##^##

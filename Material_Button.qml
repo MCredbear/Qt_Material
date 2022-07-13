@@ -68,7 +68,39 @@ Button {
             color: "#0e000000"
             layer.enabled: true
             layer.effect: OpacityMask {
-                maskSource: controlBackground
+                maskSource: Rectangle {
+                    width: controlBackground.width
+                    height: controlBackground.height
+                    radius: control.radius
+                    Rectangle {
+                        anchors.left: parent.left
+                        anchors.top: parent.top
+                        visible: !control.roundLeftTop
+                        width: control.radius * 2
+                        height: control.radius * 2
+                    }
+                    Rectangle {
+                        anchors.right: parent.right
+                        anchors.top: parent.top
+                        visible: !control.roundRightTop
+                        width: control.radius * 2
+                        height: control.radius * 2
+                    }
+                    Rectangle {
+                        anchors.left: parent.left
+                        anchors.bottom: parent.bottom
+                        visible: !control.roundLeftBottom
+                        width: control.radius * 2
+                        height: control.radius * 2
+                    }
+                    Rectangle {
+                        anchors.right: parent.right
+                        anchors.bottom: parent.bottom
+                        visible: !control.roundRightBottomr
+                        width: control.radius * 2
+                        height: control.radius * 2
+                    }
+                }
             }
         }
     }
