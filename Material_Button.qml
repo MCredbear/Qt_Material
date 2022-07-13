@@ -68,7 +68,7 @@ Button {
             color: "#0e000000"
             layer.enabled: true
             layer.effect: OpacityMask {
-                maskSource: Rectangle {
+                maskSource: Rectangle { // set it to controlBackground would cause rendering error
                     width: controlBackground.width
                     height: controlBackground.height
                     radius: control.radius
