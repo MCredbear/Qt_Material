@@ -49,7 +49,7 @@ Button {
         Rectangle {
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            visible: !control.roundRightBottomr
+            visible: !control.roundRightBottom
             width: control.radius * 2
             height: control.radius * 2
             color: control.color
