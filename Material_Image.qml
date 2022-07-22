@@ -11,7 +11,7 @@ Image {
     property bool roundLeftTop: true
     property bool roundRightTop: true
     property bool roundLeftBottom: true
-    property bool roundRightBottomr: true
+    property bool roundRightBottom: true
     layer.enabled: true
     layer.effect: OpacityMask {
         maskSource: Rectangle {

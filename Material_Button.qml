@@ -13,7 +13,7 @@ Button {
     property bool roundLeftTop: true
     property bool roundRightTop: true
     property bool roundLeftBottom: true
-    property bool roundRightBottomr: true
+    property bool roundRightBottom: true
     implicitWidth: 100
     implicitHeight: 50
     topInset: 0
