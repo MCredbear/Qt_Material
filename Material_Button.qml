@@ -7,6 +7,7 @@ import Qt5Compat.GraphicalEffects
 Button {
     id: control
     property color color
+    property color rippleColor: "#0e000000"
     property double radius: 4
     property int elevation: 8
     property bool roundLeftTop: true
@@ -65,7 +66,7 @@ Button {
             pressed: control.pressed
             anchor: control
             active: control.down || control.visualFocus || control.hovered
-            color: "#0e000000"
+            color: control.rippleColor
             layer.enabled: true
             layer.effect: OpacityMask {
                 maskSource: Rectangle { // set it to controlBackground would cause rendering error
