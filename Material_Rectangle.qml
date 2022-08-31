@@ -7,6 +7,7 @@ import Qt5Compat.GraphicalEffects
 Rectangle {
         id: control
         radius: 4
+        property bool elevated: true
         property int elevation: 8
         property bool roundLeftTop: true
         property bool roundRightTop: true
@@ -44,7 +45,7 @@ Rectangle {
             height: control.radius * 2
             color: control.color
         }
-        layer.enabled: true
+        layer.enabled: control.elevated
         layer.effect: ElevationEffect {
             elevation: control.elevation
         }

@@ -9,6 +9,7 @@ Button {
     property color color
     property color rippleColor: "#0e000000"
     property double radius: 4
+    property bool elevated: true
     property int elevation: 8
     property bool roundLeftTop: true
     property bool roundRightTop: true
@@ -55,7 +56,7 @@ Button {
             color: control.color
         }
 
-        layer.enabled: true
+        layer.enabled: control.elevated
         layer.effect: ElevationEffect {
             elevation: control.elevation
         }

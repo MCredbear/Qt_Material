@@ -7,6 +7,7 @@ import Qt5Compat.GraphicalEffects
 Image {
     id: control
     property double radius: 0
+    property bool elevated: false
     property int elevation: 0
     property bool roundLeftTop: true
     property bool roundRightTop: true
@@ -47,7 +48,7 @@ Image {
                 height: control.radius * 2
             }
         }
-        layer.enabled: true
+        layer.enabled: control.elevated
         layer.effect: ElevationEffect {
             elevation: control.elevation
         }
